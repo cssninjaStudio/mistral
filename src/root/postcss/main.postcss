@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import './modules/swiper.postcss';
+
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .tw-accessibility {
+    @apply outline-none focus:outline-none focus:outline-dashed focus:outline-muted-300 dark:focus:outline-muted-600 focus:outline-offset-2;
+  }
+}

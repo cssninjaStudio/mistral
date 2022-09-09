@@ -19,13 +19,14 @@
     "lint:stylelint:fix": "stylelint ./src/**/*.{css,pcss,postcss} --fix"
   },
   "dependencies": {
-    "@alpinejs/collapse": "^3.10.2",
-    "@alpinejs/intersect": "^3.10.2",
-    "@alpinejs/persist": "^3.10.2",
+    "@alpinejs/collapse": "^3.10.3",
+    "@alpinejs/intersect": "^3.10.3",
+    "@alpinejs/persist": "^3.10.3",
     "@iconify/iconify": "2.0.2",
-    "alpinejs": "^3.10.2",
+    "alpinejs": "^3.10.3",
     "prism-theme-vars": "0.2.2",
-    "prismjs": "1.23.0"
+    "prismjs": "1.23.0",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "@iconify/json": "2.1.102",
@@ -45,9 +46,9 @@
     "postcss": "8.4.5",
     "postcss-class-name-shortener": "^2.0.0",
     "prettier": "2.3.1",
-    "stylelint": "13.13.1",
-    "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-standard": "22.0.0",
+    "stylelint": "14.11.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-standard": "28.0.0",
     "tailwindcss": "3.1.8",
     "vite": "^3.0.7",
     "vite-plugin-handlebars": "1.6.0",

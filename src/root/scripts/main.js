@@ -1,22 +1,33 @@
+import '@purge-icons/generated'
+import 'swiper/css/bundle'
+
 //Alpine and plugins import
-import Alpine from "alpinejs"
-import intersect from "@alpinejs/intersect"
+import Alpine from 'alpinejs'
+import intersect from '@alpinejs/intersect'
 import collapse from '@alpinejs/collapse'
+import persist from '@alpinejs/persist'
+
+import './components'
 
 window.Alpine = Alpine
 //Init intersect plugin
 Alpine.plugin(intersect)
 //Init collapse plugin
 Alpine.plugin(collapse)
+//Init persist plugin
+Alpine.plugin(persist)
 //Init Alpine store
-Alpine.store("app", {
-  isLoggedIn: false,
-});
+Alpine.store('app', {
+  init() {
+    this.on = window.matchMedia('(prefers-color-scheme: dark)').matches
+  },
+  isDark: Alpine.$persist(false),
+})
 //Start Alpine
 Alpine.start()
 
 document.onreadystatechange = function () {
   if (document.readyState == 'complete') {
-    
+    // Do something here
   }
 }

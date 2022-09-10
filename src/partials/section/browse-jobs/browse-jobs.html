@@ -1,0 +1,47 @@
+<section class="w-full py-12 px-4 bg-white dark:bg-muted-900 overflow-hidden">
+  <div class="w-full max-w-7xl mx-auto">
+    <!--Section title-->
+    <div class="w-full max-w-2xl mx-auto text-center space-y-4 py-6">
+      <!--Badge-->
+      <span
+        class="
+          inline-block
+          font-sans
+          text-xs
+          py-1.5
+          px-3
+          m-1
+          rounded-lg
+          bg-indigo-100
+          text-indigo-500
+          dark:bg-indigo-500 dark:text-white
+        "
+      >
+        Our job listings
+      </span>
+      <!--Title-->
+      <h2
+        class="
+          font-heading font-bold
+          text-4xl
+          md:text-5xl
+          text-muted-800
+          dark:text-white
+        "
+      >
+        Looking for a job? Browse categories
+      </h2>
+      <!--Subtitle-->
+      <p class="font-sans text-lg text-muted-500 dark:text-muted-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tum Torquatus:
+        Prorsus, inquit, assentior; Videmus igitur ut conquiescere.
+      </p>
+    </div>
+
+    <!--Carousel-->
+    {{> section/browse-jobs/carousel}}
+
+    <!--Job listing-->
+    {{> section/browse-jobs/listing}}
+  </div>
+</section>

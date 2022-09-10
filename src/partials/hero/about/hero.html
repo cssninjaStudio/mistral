@@ -1,0 +1,155 @@
+<section class="w-full bg-muted-100 h-screen min-h-screen dark:bg-muted-900">
+  <div class="w-full max-w-7xl mx-auto">
+    <div class="w-full h-screen min-h-screen flex items-center overflow-hidden">
+      <div class="w-full h-full flex flex-col justify-between px-6">
+        <!--Hero content-->
+        <div
+          class="
+            relative
+            top-6
+            w-full
+            h-full
+            flex flex-col
+            ltablet:flex-row
+            lg:flex-row
+            items-center
+            pt-20
+            ltablet:pt-0
+            lg:pt-0
+            md:-m-3
+          "
+        >
+          <!--Column-->
+          <div class="w-full ltablet:w-1/2 lg:w-1/2 p-6">
+            <div
+              class="
+                max-w-md
+                space-y-4
+                text-center
+                mx-auto
+                ltablet:text-left
+                lg:text-left
+                ltablet:mx-0
+                lg:mx-0
+              "
+            >
+              <h1
+                class="
+                  font-heading font-bold
+                  text-5xl
+                  md:text-6xl
+                  text-muted-800
+                  dark:text-white
+                "
+              >
+                We care about our people.
+              </h1>
+              <p
+                class="
+                  font-sans
+                  text-base
+                  md:text-lg
+                  text-muted-500
+                  dark:text-muted-400
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tum
+                Torquatus: Prorsus, inquit, assentior; Videmus igitur ut
+                conquiescere ne infantes quidem possint.
+              </p>
+
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  ltablet:justify-start
+                  lg:justify-start
+                  gap-x-2
+                "
+              >
+                <button
+                  class="
+                    relative
+                    font-sans font-normal
+                    inline-flex
+                    items-center
+                    justify-center
+                    leading-5
+                    no-underline
+                    min-w-[130px]
+                    space-x-1
+                    text-white
+                    bg-primary-500
+                    h-12
+                    px-5
+                    py-3
+                    text-base
+                    rounded-xl
+                    hover:bg-primary-600
+                    hover:shadow-xl
+                    hover:shadow-primary-500/20
+                    tw-accessibility
+                    transition-all
+                    duration-300
+                  "
+                >
+                  About Us
+                </button>
+                <button
+                  class="
+                    relative
+                    font-sans font-normal
+                    inline-flex
+                    items-center
+                    justify-center
+                    leading-5
+                    no-underline
+                    min-w-[130px]
+                    space-x-1
+                    text-slate-700
+                    bg-white
+                    border
+                    dark:text-white dark:bg-slate-700 dark:border-slate-600
+                    h-12
+                    px-5
+                    py-3
+                    text-base
+                    rounded-xl
+                    hover:bg-slate-50
+                    tw-accessibility
+                    transition-all
+                    duration-300
+                  "
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--Column-->
+          <div class="w-full ltablet:w-1/2 lg:w-1/2 p-6">
+            <div
+              x-data="video()"
+              class="group relative w-full max-w-[440px] mx-auto"
+            >
+              <!--Polka dots group-->
+              <div class="absolute -top-10 -left-10 z-0">
+                <!--Polka dots-->
+                {{> shapes/polka}}
+              </div>
+              <div class="absolute -bottom-10 -right-10 z-0">
+                <!--Polka dots-->
+                {{> shapes/polka}}
+              </div>
+
+              <!--Video player-->
+              {{> video/square/square-1}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

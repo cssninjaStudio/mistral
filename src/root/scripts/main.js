@@ -1,4 +1,8 @@
 import '@purge-icons/generated'
+import '@vidstack/player/define/vds-media.js'
+import '@vidstack/player/define/vds-video.js'
+import '@vidstack/player/define/vds-aspect-ratio.js'
+import '@vidstack/player/define/vds-poster.js'
 import 'swiper/css/bundle'
 
 //Alpine and plugins import

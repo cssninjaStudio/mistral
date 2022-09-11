@@ -1,5 +1,5 @@
 const progressPath = document.querySelector('.backtotop path')
-const pathLength = progressPath.getTotalLength()
+const pathLength = progressPath ? progressPath.getTotalLength() : 0
 
 export function backtotop() {
   return {

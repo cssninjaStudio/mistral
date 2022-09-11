@@ -24,19 +24,10 @@
   <body class="w-full h-full bg-white dark:bg-muted-900">
     <!-- prettier-ignore -->
 
-    <!--Site navbar-->
-    {{> navigation/navbar}}
-
     <main class="w-full">
       <!-- Renders the page body -->
       {{> @partial-block }}
     </main>
-
-    <!--Site footer-->
-    {{> footer/footer}}
-
-    <!--Nack to top button-->
-    {{> misc/backtotop}}
 
     <script type="module" src="/scripts/main.js"></script>
   </body>

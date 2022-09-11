@@ -1,0 +1,584 @@
+<section class="w-full bg-muted-100 min-h-screen dark:bg-muted-900">
+  <div class="w-full max-w-7xl mx-auto">
+    <div class="w-full min-h-screen flex items-center overflow-hidden">
+      <!--Content-->
+      <div
+        class="
+          w-full
+          h-full
+          flex flex-col
+          justify-between
+          px-6
+          pt-36
+          lg:pt-36
+          pb-16
+        "
+      >
+        <!--Title-->
+        <div class="max-w-3xl mx-auto space-y-4 text-center">
+          <h1
+            class="
+              font-heading font-bold
+              text-5xl
+              md:text-5xl
+              text-muted-800
+              dark:text-white
+            "
+          >
+            Dead simple pricing.
+          </h1>
+          <p
+            class="
+              font-sans
+              text-base
+              md:text-lg
+              text-muted-500
+              dark:text-muted-400
+            "
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tum
+            Torquatus.
+          </p>
+        </div>
+
+        <!--Switcher-->
+        <div
+          class="
+            w-full
+            max-w-xs
+            mx-auto
+            flex
+            justify-center
+            items-center
+            gap-8
+            py-6
+          "
+        >
+          <span
+            class="font-sans text-sm font-semibold"
+            :class="!yearly ? 'text-primary-500' : 'text-muted-300 dark:text-muted-700'"
+          >
+            Monthly
+          </span>
+          <label for="pricing-switcher" class="relative">
+            <input
+              type="checkbox"
+              class="
+                peer
+                absolute
+                top-0
+                left-0
+                w-full
+                h-full
+                opacity-0
+                cursor-pointer
+                z-30
+              "
+              @click="toggle()"
+            />
+            <span
+              class="
+                block
+                relative
+                h-8
+                w-16
+                bg-muted-200
+                dark:bg-muted-800
+                peer-checked:bg-muted-300
+                dark:peer-checked:bg-primary-800
+                rounded-full
+                z-10
+                transition-colors
+                duration-300
+                peer-focus:tw-accessibility-static
+              "
+            ></span>
+            <span
+              class="
+                absolute
+                -top-2
+                -left-4
+                w-12
+                h-12
+                flex
+                items-center
+                justify-center
+                bg-muted-200
+                dark:bg-muted-700
+                text-muted-300
+                dark:text-muted-700
+                mask mask-hexed
+                cursor-pointer
+                z-20
+                peer-checked:translate-x-full
+                peer-checked:rotate-[360deg]
+                peer-checked:text-primary-500
+                transition-all
+                duration-500
+              "
+            >
+              <span
+                class="
+                  w-11
+                  h-11
+                  flex
+                  items-center
+                  justify-center
+                  bg-white
+                  dark:bg-muted-800
+                  mask mask-hexed
+                "
+              >
+                <i
+                  class="iconify w-5 h-5"
+                  data-icon="ph:circles-four-duotone"
+                ></i>
+              </span>
+            </span>
+          </label>
+          <span
+            class="font-sans text-sm font-semibold"
+            :class="yearly ? 'text-primary-500' : 'text-muted-300 dark:text-muted-700'"
+          >
+            Yearly
+          </span>
+        </div>
+
+        <!--Pricing overview-->
+        <div class="py-6 flex flex-wrap md:items-center w-full">
+          <div
+            class="
+              bg-white
+              dark:bg-muted-800
+              border border-muted-200
+              dark:border-muted-700
+              rounded
+              w-full
+              md:w-1/2
+              z-10
+              shadow-xl shadow-muted-400/10
+              dark:shadow-muted-800/10
+            "
+          >
+            <!--Header-->
+            <div
+              class="
+                flex flex-col
+                py-8
+                border-b border-muted-200
+                dark:border-muted-700
+                text-center text-primary-500
+                font-semibold
+                uppercase
+              "
+            >
+              <div class="w-12 mx-auto mb-1 text-muted-300 dark:text-muted-600">
+                {{> shapes/atom-1}}
+              </div>
+              Regular
+            </div>
+            <!--Body-->
+            <div class="py-8">
+              <!--Columns-->
+              <div class="flex items-top">
+                <!--Column-->
+                <div class="w-1/2 flex justify-center items-center gap-2">
+                  <span
+                    class="
+                      text-3xl
+                      font-semibold
+                      text-muted-800
+                      dark:text-white
+                    "
+                  >
+                    <template x-if="!yearly">
+                      <span>$99</span>
+                    </template>
+                    <template x-if="yearly">
+                      <span>$1099</span>
+                    </template>
+                    <template x-if="!yearly">
+                      <span class="text-sm font-medium text-muted-400">
+                        / per month
+                      </span>
+                    </template>
+                    <template x-if="yearly">
+                      <span class="text-sm font-medium text-muted-400">
+                        / per year
+                      </span>
+                    </template>
+                  </span>
+                </div>
+                <!--Column-->
+                <div class="w-1/2 flex justify-center items-center">
+                  <i
+                    class="iconify mx-2 h-5 w-5 text-muted-400"
+                    data-icon="lucide:plus"
+                  ></i>
+                  <span
+                    class="
+                      text-3xl
+                      font-semibold
+                      text-muted-800
+                      dark:text-white
+                    "
+                  >
+                    <template x-if="!yearly">
+                      <span>$25</span>
+                    </template>
+                    <template x-if="yearly">
+                      <span>$15</span>
+                    </template>
+                  </span>
+                </div>
+              </div>
+              <!--Columns-->
+              <div class="flex items-top font-sans mt-4">
+                <!--Column-->
+                <div class="w-1/2 text-center text-xs text-muted-400">
+                  Subscription fee.
+                </div>
+                <!--Column-->
+                <div class="w-1/2 text-center text-xs text-muted-400">
+                  Per candidate hired.
+                </div>
+              </div>
+
+              <!--Subfeatures-->
+              <div class="flex items-top mt-16">
+                <!--Column-->
+                <div
+                  class="w-1/2 ltablet:w-3/4 text-left text-xs text-grey-dark"
+                >
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:ear-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Online interviews
+                    </span>
+                  </div>
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:gauge-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Skill assessment
+                    </span>
+                  </div>
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:circles-three-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Unlimited pool
+                    </span>
+                  </div>
+                </div>
+
+                <!--Column-->
+                <div class="w-1/2 ltablet:w-3/4 text-xs text-grey-dark">
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:factory-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Various industries
+                    </span>
+                  </div>
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:parachute-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Help & Assistance
+                    </span>
+                  </div>
+                  <!--Subfeature-->
+                  <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
+                    <span
+                      class="
+                        inline-flex
+                        justify-center
+                        bg-green-lighter
+                        rounded-full
+                      "
+                    >
+                      <i
+                        class="iconify mx-2 h-5 w-5 text-primary-500"
+                        data-icon="ph:note-duotone"
+                      ></i>
+                    </span>
+                    <span class="font-sans text-sm text-muted-500">
+                      Audit & consulting
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Link-->
+            <a href="#">
+              <div
+                class="
+                  group
+                  py-8
+                  bg-muted-50
+                  dark:bg-muted-700
+                  hover:bg-muted-100
+                  dark:hover:bg-muted-700/40
+                  text-primary-500
+                  rounded rounded-t-none
+                  text-center
+                  uppercase
+                  font-sans font-semibold
+                  text-sm
+                  flex
+                  items-center
+                  justify-center
+                  transition-colors
+                  duration-300
+                "
+              >
+                <span>Get Started</span>
+                <i
+                  class="
+                    iconify
+                    mx-2
+                    h-4
+                    w-4
+                    group-hover:translate-x-1
+                    transition-transform
+                    duration-300
+                  "
+                  data-icon="lucide:arrow-right"
+                ></i>
+              </div>
+            </a>
+          </div>
+
+          <!--Enterprise-->
+          <div
+            class="
+              bg-muted-900
+              dark:bg-primary-800
+              rounded
+              shadow
+              w-full
+              md:w-1/2
+              z-0
+              mx-auto
+              mt-4
+              md:-mt-0 md:-ml-1
+            "
+          >
+            <!--Header-->
+            <div
+              class="
+                flex flex-col
+                font-heading
+                py-8
+                text-center text-white/90
+                font-semibold
+                uppercase
+                mb-8
+                border border-muted-700
+                dark:border-primary-700
+              "
+            >
+              <div class="w-12 mx-auto mb-1 text-muted-300 dark:text-white">
+                {{> shapes/atom-2}}
+              </div>
+              Enterprise
+            </div>
+
+            <!--Text-->
+            <div class="w-2/3 mx-auto">
+              <p class="text-center text-sm text-white/60 leading-normal">
+                You are a bigger company and you are looking to improve your
+                recruitment workflow. This is made for you.
+              </p>
+            </div>
+
+            <!--Table-->
+            <div class="py-8">
+              <table
+                class="w-3/4 mx-auto text-white/60"
+                style="border-collapse: collapse"
+              >
+                <tbody>
+                  <tr>
+                    <!--Feature-->
+                    <td
+                      class="
+                        px-2
+                        py-4
+                        border border-muted-700
+                        dark:border-primary-700
+                      "
+                    >
+                      <div class="flex items-center gap-1 px-3">
+                        <i
+                          class="iconify w-5 h-5"
+                          data-icon="ph:timer-duotone"
+                        ></i>
+                        <span class="text-sm">Skill testing</span>
+                      </div>
+                    </td>
+                    <!--Feature-->
+                    <td
+                      class="
+                        px-2
+                        py-4
+                        border border-muted-700
+                        dark:border-primary-700
+                      "
+                    >
+                      <div class="flex items-center gap-1 px-3">
+                        <i
+                          class="iconify w-5 h-5"
+                          data-icon="ph:lightning-duotone"
+                        ></i>
+                        <span class="text-sm">Emergency hiring</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <!--Feature-->
+                    <td
+                      class="
+                        px-2
+                        py-4
+                        border border-muted-700
+                        dark:border-primary-700
+                      "
+                    >
+                      <div class="flex items-center gap-1 px-3">
+                        <i
+                          class="iconify w-5 h-5"
+                          data-icon="ph:note-duotone"
+                        ></i>
+                        <span class="text-sm">Strategic reports</span>
+                      </div>
+                    </td>
+                    <!--Feature-->
+                    <td
+                      class="
+                        px-2
+                        py-4
+                        border border-muted-700
+                        dark:border-primary-700
+                      "
+                    >
+                      <div class="flex items-center gap-1 px-3">
+                        <i
+                          class="iconify w-5 h-5"
+                          data-icon="ph:lifebuoy-duotone"
+                        ></i>
+                        <span class="text-sm">24/24 support</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!--Link-->
+            <a href="#">
+              <div
+                class="
+                  group
+                  py-8
+                  bg-muted-900
+                  dark:bg-primary-800
+                  hover:bg-muted-800
+                  dark:hover:bg-primary-700/80
+                  text-white
+                  rounded rounded-t-none
+                  text-center
+                  uppercase
+                  font-sans font-medium
+                  text-sm
+                  flex
+                  items-center
+                  justify-center
+                  transition-colors
+                  duration-300
+                "
+              >
+                <span>Contact sales</span>
+                <i
+                  class="
+                    iconify
+                    mx-2
+                    h-4
+                    w-4
+                    group-hover:translate-x-1
+                    transition-transform
+                    duration-300
+                  "
+                  data-icon="lucide:arrow-right"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

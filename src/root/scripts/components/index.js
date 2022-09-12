@@ -7,6 +7,7 @@ import { collapse } from './collapse'
 import { gallery } from './gallery'
 import { pricing } from './pricing'
 import { comparison } from './comparison'
+import { blog } from './blog'
 
 window.layout = layout
 window.navbar = navbar
@@ -18,3 +19,4 @@ window.collapse = collapse
 window.gallery = gallery
 window.pricing = pricing
 window.comparison = comparison
+window.blog = blog

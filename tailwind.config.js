@@ -96,6 +96,7 @@ module.exports = {
           background:
             'linear-gradient(to right, rgb(0 0 0 / 7%) 8%, rgb(0 0 0 / 15%) 18%, rgb(0 0 0 / 7%) 33%)',
           'background-size': '800px 104px',
+          color: 'transparent !important',
         },
         '.dark .placeload': {
           background:

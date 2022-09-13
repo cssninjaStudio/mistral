@@ -1,0 +1,67 @@
+<!--Start Layout-->
+{{#> default }}
+
+<div x-data="blog()">
+  <!--Post header-->
+  <template x-if="isLoading">{{> blog/post-header-placeload}}</template>
+  <template x-if="!isLoading">{{> blog/post-header}}</template>
+
+  <section class="w-full py-12 px-4 bg-white dark:bg-muted-900 overflow-hidden">
+    <div class="w-full max-w-7xl mx-auto">
+      <div class="w-full flex flex-col ltablet:flex-row lg:flex-row gap-y-8">
+        <!--Content column-->
+        <div
+          class="w-full ptablet:w-3/4 ltablet:w-2/3 lg:w-3/4 ptablet:mx-auto"
+        >
+          <!--Post content-->
+          <template x-if="isLoading">
+            {{> blog/post-content-placeload}}
+          </template>
+          <template x-if="!isLoading">{{> blog/post-content}}</template>
+        </div>
+
+        <!--Meta column-->
+        <div
+          class="w-full ptablet:w-3/4 ltablet:w-1/3 lg:w-1/4 ptablet:mx-auto"
+        >
+          <div class="mt-10">
+            <!--Share widget-->
+            <template x-if="isLoading">
+              {{> blog/post-widget-share-placeload}}
+            </template>
+            <template x-if="!isLoading">{{> blog/post-widget-share}}</template>
+
+            <hr class="my-10 border-t border-muted-200 dark:border-muted-800" />
+
+            <!--Recent posts widget-->
+            <template x-if="isLoading">
+              {{> blog/post-widget-posts-placeload}}
+            </template>
+            <template x-if="!isLoading">{{> blog/post-widget-posts}}</template>
+
+            <hr class="my-10 border-t border-muted-200 dark:border-muted-800" />
+
+            <!--Tags widget-->
+            <template x-if="isLoading">
+              {{> blog/post-widget-tags-placeload}}
+            </template>
+            <template x-if="!isLoading">{{> blog/post-widget-tags}}</template>
+
+            <hr class="my-10 border-t border-muted-200 dark:border-muted-800" />
+
+            <!--Popular authors widget-->
+            <template x-if="isLoading">
+              {{> blog/post-widget-authors-placeload}}
+            </template>
+            <template x-if="!isLoading">
+              {{> blog/post-widget-authors}}
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--End Layout-->
+{{/default}}

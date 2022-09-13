@@ -36,6 +36,101 @@ module.exports = {
         sans: ['Roboto Flex', 'sans-serif'],
         heading: ['Inter', 'sans-serif'],
       },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.muted.600'),
+            '[class~="lead"]': {
+              color: theme('colors.muted.400'),
+            },
+            h2: {
+              fontFamily: theme('fontFamily.heading'),
+              fontWeight: 700,
+              color: theme('colors.muted.800'),
+            },
+            h3: {
+              fontFamily: theme('fontFamily.heading'),
+              fontWeight: 500,
+              color: theme('colors.muted.800'),
+            },
+            h4: {
+              fontFamily: theme('fontFamily.heading'),
+              fontWeight: 500,
+              fontSize: '1.25em',
+              color: theme('colors.muted.800'),
+            },
+            hr: {
+              borderColor: theme('colors.muted.200'),
+            },
+            li: {
+              fontSize: '1.15rem',
+              color: theme('colors.muted.600'),
+              padding: '0.35rem 0',
+            },
+            strong: {
+              color: theme('colors.muted.800'),
+            },
+            em: {
+              color: theme('colors.muted.500'),
+              fontSize: '1.1rem',
+              lineHeight: 1,
+            },
+            blockquote: {
+              fontSize: '1.1rem',
+              lineHeight: 1.4,
+              fontWeight: 500,
+              color: theme('colors.muted.500'),
+              borderLeftColor: theme('colors.primary.500'),
+              background: theme('colors.muted.100'),
+              padding: '1.75rem',
+            },
+            pre: {
+              fontFamily: theme('fontFamily.mono'),
+            },
+            code: {
+              fontFamily: theme('fontFamily.mono'),
+              background: theme('colors.primary.100'),
+              color: theme('colors.primary.500'),
+              padding: '0.35rem',
+              fontWeight: 600,
+              fontSize: '0.95rem !important',
+            },
+          },
+        },
+        dark: {
+          css: {
+            color: theme('colors.muted.400'),
+            '[class~="lead"]': {
+              color: theme('colors.muted.300'),
+            },
+            h2: {
+              color: theme('colors.muted.100'),
+            },
+            h3: {
+              color: theme('colors.muted.100'),
+            },
+            h4: {
+              color: theme('colors.muted.100'),
+            },
+            hr: {
+              borderColor: theme('colors.muted.800'),
+            },
+            li: {
+              color: theme('colors.muted.400'),
+            },
+            strong: {
+              color: theme('colors.muted.300'),
+            },
+            em: {
+              color: theme('colors.muted.400'),
+            },
+            blockquote: {
+              color: theme('colors.muted.200'),
+              background: theme('colors.muted.800'),
+            },
+          },
+        },
+      }),
       keyframes: {
         indeterminate: {
           '0%': { 'margin-left': '-10%' },

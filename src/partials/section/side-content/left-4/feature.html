@@ -1,0 +1,471 @@
+<div class="relative w-full mx-auto space-y-4 py-10">
+  <!--Background shape-->
+  <div
+    class="
+      absolute
+      -top-10
+      left-10
+      h-[480px]
+      w-[480px]
+      rotate-45
+      mask mask-hexed
+      bg-primary-50
+      dark:bg-primary-500/5
+      z-0
+    "
+  ></div>
+
+  <!--Table-->
+  <div
+    class="
+      relative
+      w-full
+      p-5
+      rounded-xl
+      border border-muted-200
+      dark:border-muted-700
+      bg-white
+      dark:bg-muted-800
+      shadow-xl shadow-muted-400/20
+    "
+  >
+    <table class="w-full text-left">
+      <!--Header-->
+      <thead>
+        <tr class="text-muted-400 text-sm">
+          <th
+            class="
+              font-medium
+              p-3
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            Type
+          </th>
+          <th
+            class="
+              font-medium
+              p-3
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            Reviewer
+          </th>
+          <th
+            class="
+              font-medium
+              p-3
+              border-b border-muted-200
+              dark:border-muted-800
+              hidden
+              md:table-cell
+            "
+          >
+            Status
+          </th>
+          <th
+            class="
+              hidden
+              ltablet:table-cell
+              lg:table-cell
+              font-medium
+              p-3
+              border-b border-muted-200
+              dark:border-muted-800
+              sm:text-muted-400
+              text-white
+            "
+          >
+            Date
+          </th>
+        </tr>
+      </thead>
+      <!--Body-->
+      <tbody class="text-muted-600 dark:text-muted-100">
+        <!--Row-->
+        <tr>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-2">
+              <i
+                class="iconify w-5 h-5 text-primary-500"
+                data-icon="lucide:mail-check"
+              ></i>
+              <span
+                class="
+                  hidden
+                  ltablet:inline-block
+                  lg:inline-block
+                  font-sans
+                  text-muted-500
+                  dark:text-muted-400
+                "
+              >
+                Application
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-1">
+              <img
+                class="
+                  w-7
+                  h-7
+                  border border-muted-200
+                  dark:border-muted-800
+                  rounded-full
+                "
+                src="/img/avatars/32.jpg"
+                alt="Reviewer photo"
+              />
+              <span class="font-sans text-muted-500 dark:text-muted-400">
+                Nadia K.
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+              md:table-cell
+              hidden
+            "
+          >
+            <span
+              class="
+                text-xs
+                py-1
+                px-2
+                leading-none
+                dark:bg-muted-800
+                bg-primary-100
+                text-primary-600
+                rounded-md
+              "
+            >
+              New
+            </span>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              hidden
+              ltablet:table-cell
+              lg:table-cell
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center font-sans">
+              <div class="sm:flex hidden flex-col">
+                27.09.2022
+                <div class="text-muted-400 text-xs">9:18 AM</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!--Row-->
+        <tr>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-2">
+              <i
+                class="iconify w-5 h-5 text-primary-500"
+                data-icon="lucide:file-text"
+              ></i>
+              <span
+                class="
+                  hidden
+                  ltablet:inline-block
+                  lg:inline-block
+                  font-sans
+                  text-muted-500
+                  dark:text-muted-400
+                "
+              >
+                Submission
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-1">
+              <img
+                class="
+                  w-7
+                  h-7
+                  border border-muted-200
+                  dark:border-muted-800
+                  rounded-full
+                "
+                src="/img/avatars/16.jpg"
+                alt="Reviewer photo"
+              />
+              <span class="font-sans text-muted-500 dark:text-muted-400">
+                Ron C.
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+              md:table-cell
+              hidden
+            "
+          >
+            <span
+              class="
+                text-xs
+                py-1
+                px-2
+                leading-none
+                dark:bg-muted-900
+                bg-yellow-100
+                text-yellow-600
+                rounded-md
+              "
+            >
+              Pending
+            </span>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              hidden
+              ltablet:table-cell
+              lg:table-cell
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center font-sans">
+              <div class="sm:flex hidden flex-col">
+                25.09.2022
+                <div class="text-muted-400 text-xs">3:39 PM</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!--Row-->
+        <tr>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-2">
+              <i
+                class="iconify w-5 h-5 text-primary-500"
+                data-icon="lucide:mic"
+              ></i>
+              <span
+                class="
+                  hidden
+                  ltablet:inline-block
+                  lg:inline-block
+                  font-sans
+                  text-muted-500
+                  dark:text-muted-400
+                "
+              >
+                Interview #4
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center gap-1">
+              <img
+                class="
+                  w-7
+                  h-7
+                  border border-muted-200
+                  dark:border-muted-800
+                  rounded-full
+                "
+                src="/img/avatars/19.jpg"
+                alt="Reviewer photo"
+              />
+              <span class="font-sans text-muted-500 dark:text-muted-400">
+                Mike J.
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+              md:table-cell
+              hidden
+            "
+          >
+            <span
+              class="
+                text-xs
+                py-1
+                px-2
+                leading-none
+                dark:bg-muted-800
+                bg-rose-100
+                text-rose-600
+                rounded-md
+              "
+            >
+              Cancelled
+            </span>
+          </td>
+          <!--Cell-->
+          <td
+            class="
+              hidden
+              ltablet:table-cell
+              lg:table-cell
+              sm:p-3
+              py-2
+              px-1
+              border-b border-muted-200
+              dark:border-muted-800
+            "
+          >
+            <div class="flex items-center font-sans">
+              <div class="sm:flex hidden flex-col">
+                21.09.2022
+                <div class="text-muted-400 text-xs">10:13 AM</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!--Row-->
+        <tr>
+          <!--Cell-->
+          <td class="sm:p-3 py-2 px-1">
+            <div class="flex items-center gap-2">
+              <i
+                class="iconify w-5 h-5 text-primary-500"
+                data-icon="lucide:phone-call"
+              ></i>
+              <span
+                class="
+                  hidden
+                  ltablet:inline-block
+                  lg:inline-block
+                  font-sans
+                  text-muted-500
+                  dark:text-muted-400
+                "
+              >
+                Call
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td class="sm:p-3 py-2 px-1">
+            <div class="flex items-center gap-1">
+              <img
+                class="w-7 h-7 border border-muted-200 rounded-full"
+                src="/img/avatars/31.jpg"
+                alt="Reviewer photo"
+              />
+              <span class="font-sans text-muted-500 dark:text-muted-400">
+                Amy D.
+              </span>
+            </div>
+          </td>
+          <!--Cell-->
+          <td class="sm:p-3 py-2 px-1 md:table-cell hidden">
+            <span
+              class="
+                text-xs
+                py-1
+                px-2
+                leading-none
+                dark:bg-muted-800
+                bg-green-100
+                text-green-600
+                rounded-md
+              "
+            >
+              Complete
+            </span>
+          </td>
+          <!--Cell-->
+          <td class="hidden ltablet:table-cell lg:table-cell sm:p-3 py-2 px-1">
+            <div class="flex items-center font-sans">
+              <div class="sm:flex hidden flex-col">
+                18.09.2022
+                <div class="text-muted-400 text-xs">8:44 AM</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

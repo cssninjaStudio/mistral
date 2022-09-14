@@ -1,0 +1,2026 @@
+<div
+  class="
+    relative
+    bg-muted-100
+    dark:bg-muted-900 dark:text-white
+    text-muted-600
+    border border-muted-200
+    dark:border-muted-800
+    h-screen
+    flex
+    overflow-hidden
+    rounded-2xl
+    text-sm
+    shadow-xl shadow-muted-400/20
+    -mb-40
+    z-10
+  "
+>
+  <!--Sidebar-->
+  <div
+    class="
+      bg-white
+      dark:bg-muted-900 dark:border-muted-800
+      w-20
+      flex-shrink-0
+      border-r border-muted-200
+      flex-col
+      hidden
+      sm:flex
+    "
+  >
+    <!--Logo-->
+    <div class="h-16 flex items-center justify-center">
+      <img class="h-9" src="/img/logo/logo-square.svg" alt="Mistral logo" />
+    </div>
+    <!--Menu-->
+    <div class="flex mx-auto flex-grow mt-4 flex-col text-muted-400 space-y-4">
+      <!--Menu item-->
+      <button
+        class="
+          h-12
+          w-12
+          dark:text-muted-500
+          mask mask-blob
+          flex
+          items-center
+          justify-center
+        "
+      >
+        <i class="iconify h-5 w-5" data-icon="ph:house-duotone"></i>
+      </button>
+      <!--Menu item-->
+      <button
+        class="
+          h-12
+          w-12
+          mask mask-blob
+          flex
+          items-center
+          justify-center
+          bg-primary-100
+          text-primary-500
+          dark:bg-primary-500/10 dark:text-primary-500
+        "
+      >
+        <i class="iconify h-5 w-5" data-icon="ph:suitcase-duotone"></i>
+      </button>
+      <!--Menu item-->
+      <button
+        class="
+          h-12
+          w-12
+          dark:text-muted-500
+          mask mask-blob
+          flex
+          items-center
+          justify-center
+        "
+      >
+        <i class="iconify h-5 w-5" data-icon="ph:chats-circle-duotone"></i>
+      </button>
+      <!--Menu item-->
+      <button
+        class="
+          h-12
+          w-12
+          dark:text-muted-500
+          mask mask-blob
+          flex
+          items-center
+          justify-center
+        "
+      >
+        <i class="iconify h-5 w-5" data-icon="ph:grid-four-duotone"></i>
+      </button>
+    </div>
+  </div>
+  <!--Content-->
+  <div class="flex-grow overflow-hidden h-full flex flex-col">
+    <!--Navigation-->
+    <div
+      class="
+        h-16
+        lg:flex
+        w-full
+        bg-white
+        dark:bg-muted-800
+        border-b border-muted-200
+        dark:border-muted-800
+        hidden
+        px-6
+      "
+    >
+      <!--Tabbed links-->
+      <div
+        class="flex gap-4 h-full font-sans text-muted-400 dark:text-muted-500"
+      >
+        <!--Link-->
+        <a
+          href="#"
+          class="
+            py-3
+            cursor-pointer
+            h-full
+            border-b-2 border-transparent
+            inline-flex
+            items-center
+          "
+        >
+          Overview
+        </a>
+        <!--Link-->
+        <a
+          href="#"
+          class="
+            py-3
+            cursor-pointer
+            h-full
+            border-b-2 border-primary-500
+            text-primary-500
+            inline-flex
+            items-center
+          "
+        >
+          Interviews
+        </a>
+        <!--Link-->
+        <a
+          href="#"
+          class="
+            py-3
+            cursor-pointer
+            h-full
+            border-b-2 border-transparent
+            inline-flex
+            items-center
+          "
+        >
+          Vetting
+        </a>
+        <!--Link-->
+        <a
+          href="#"
+          class="
+            py-3
+            cursor-pointer
+            h-full
+            border-b-2 border-transparent
+            inline-flex
+            items-center
+          "
+        >
+          Reports
+        </a>
+      </div>
+      <!--Actions-->
+      <div class="ml-auto flex items-center gap-2">
+        <!--Notifications-->
+        <button
+          class="
+            w-8
+            h-8
+            flex
+            items-center
+            justify-center
+            mask mask-blob
+            text-muted-400
+            hover:bg-muted-200 hover:text-muted-500
+            dark:hover:bg-muted-800 dark:hover:text-muted-300
+            transition-colors
+            duration-300
+          "
+        >
+          <i class="iconify w-3 h-3" data-icon="fa6-solid:bell"></i>
+        </button>
+
+        <!--Messages-->
+        <button
+          class="
+            w-8
+            h-8
+            flex
+            items-center
+            justify-center
+            mask mask-blob
+            text-muted-400
+            hover:bg-muted-200 hover:text-muted-500
+            dark:hover:bg-muted-800 dark:hover:text-muted-300
+            transition-colors
+            duration-300
+          "
+        >
+          <i class="iconify w-3 h-3" data-icon="fa6-solid:envelope"></i>
+        </button>
+
+        <!--Account-->
+        <button class="flex items-center">
+          <span class="relative flex-shrink-0">
+            <img
+              class="w-8 h-8 rounded-full"
+              src="/img/avatars/44.jpg"
+              alt="profile image"
+            />
+            <span
+              class="
+                absolute
+                right-0
+                -mb-1
+                top-0
+                w-2
+                h-2
+                rounded-full
+                bg-teal-500
+                border border-white
+                dark:border-muted-900
+              "
+            ></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!--Inner content-->
+    <div class="flex-grow flex overflow-x-hidden">
+      <!--Left panel-->
+      <div
+        class="
+          xl:w-72
+          w-48
+          flex-shrink-0
+          border-r border-muted-200
+          dark:border-muted-800
+          h-full
+          overflow-y-auto
+          slimscroll slimscroll-opaque
+          lg:block
+          hidden
+          p-5
+        "
+      >
+        <!--Search field-->
+        <div>
+          <div class="font-sans text-xs text-muted-400 tracking-wider">
+            USERS
+          </div>
+          <div class="group relative mt-2">
+            <input
+              type="text"
+              class="
+                peer
+                pl-8
+                h-9
+                border border-muted-300
+                bg-white
+                dark:border-muted-700 dark:text-white dark:bg-muted-800
+                w-full
+                rounded-md
+                text-sm
+                tw-accessibility
+              "
+              placeholder="Search"
+            />
+            <div
+              class="
+                absolute
+                top-0
+                left-0
+                h-9
+                w-9
+                flex
+                justify-center
+                items-center
+                text-muted-400
+                group-focus-within:text-primary-500
+                transition-colors
+                duration-300
+              "
+            >
+              <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
+            </div>
+          </div>
+        </div>
+        <!--User list-->
+        <div class="space-y-4 mt-3">
+          <!--List item-->
+          <a
+            class="
+              relative
+              p-3
+              w-full
+              flex flex-col
+              rounded-md
+              bg-white
+              dark:bg-muted-800
+              border border-muted-200
+              dark:border-muted-700
+            "
+          >
+            <!--dot-->
+            <div
+              class="absolute top-3 right-3 h-2 w-2 rounded-full bg-muted-300"
+            ></div>
+
+            <div
+              class="
+                flex
+                xl:flex-row
+                flex-col
+                items-center
+                gap-2
+                font-medium
+                text-muted-900
+                dark:text-white
+                pb-2
+                mb-2
+                xl:border-b
+                border-muted-200 border-opacity-75
+                dark:border-muted-700
+                w-full
+              "
+            >
+              <img
+                src="/img/avatars/52.jpg"
+                class="w-8 h-8 rounded-full"
+                alt="user photo"
+              />
+              <div class="font-sans text-left leading-tight">
+                <h4 class="text-sm">Anna Simons</h4>
+                <p class="text-xs text-muted-400">London, UK</p>
+              </div>
+            </div>
+            <div class="flex items-center w-full">
+              <div
+                class="
+                  font-sans
+                  text-xs
+                  py-1
+                  px-2
+                  leading-none
+                  dark:bg-muted-900
+                  bg-primary-100
+                  text-primary-500
+                  rounded-md
+                "
+              >
+                UX Design
+              </div>
+              <div class="ml-auto">
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-16
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-10/12
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--List item-->
+          <a
+            class="
+              bg-white
+              p-3
+              w-full
+              flex flex-col
+              rounded-md
+              dark:bg-muted-800
+              shadow-lg
+              relative
+              ring-2 ring-primary-500
+              focus:outline-none
+            "
+          >
+            <!--dot-->
+            <div
+              class="absolute top-3 right-3 h-2 w-2 rounded-full bg-emerald-500"
+            ></div>
+            <div
+              class="
+                flex
+                xl:flex-row
+                flex-col
+                items-center
+                gap-2
+                font-medium
+                text-muted-900
+                dark:text-white
+                pb-2
+                mb-2
+                xl:border-b
+                border-muted-200 border-opacity-75
+                dark:border-muted-700
+                w-full
+              "
+            >
+              <img
+                src="/img/avatars/29.jpg"
+                class="w-8 h-8 rounded-full"
+                alt="user photo"
+              />
+              <div class="font-sans text-left leading-tight">
+                <h4 class="text-sm">Christina Chu</h4>
+                <p class="text-xs text-muted-400">Los Angeles, CA</p>
+              </div>
+            </div>
+            <div class="flex items-center w-full">
+              <div
+                class="
+                  text-xs
+                  py-1
+                  px-2
+                  leading-none
+                  dark:bg-muted-900
+                  bg-green-100
+                  text-green-600
+                  rounded-md
+                "
+              >
+                Sales
+              </div>
+              <div class="ml-auto">
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-16
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-2/3
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--List item-->
+          <a
+            class="
+              relative
+              p-3
+              w-full
+              flex flex-col
+              rounded-md
+              bg-white
+              dark:bg-muted-800
+              border border-muted-200
+              dark:border-muted-700
+            "
+          >
+            <!--dot-->
+            <div
+              class="absolute top-3 right-3 h-2 w-2 rounded-full bg-muted-300"
+            ></div>
+            <div
+              class="
+                flex
+                xl:flex-row
+                flex-col
+                items-center
+                gap-2
+                font-medium
+                text-muted-900
+                dark:text-white
+                pb-2
+                mb-2
+                xl:border-b
+                border-muted-200 border-opacity-75
+                dark:border-muted-700
+                w-full
+              "
+            >
+              <img
+                src="/img/avatars/58.jpg"
+                class="w-8 h-8 rounded-full"
+                alt="user photo"
+              />
+              <div class="font-sans text-left leading-tight">
+                <h4 class="text-sm">Tara Wilson</h4>
+                <p class="text-xs text-muted-400">San Diego, CA</p>
+              </div>
+            </div>
+            <div class="flex items-center w-full">
+              <div
+                class="
+                  text-xs
+                  py-1
+                  px-2
+                  leading-none
+                  dark:bg-muted-900
+                  bg-yellow-100
+                  text-yellow-600
+                  rounded-md
+                "
+              >
+                Marketing
+              </div>
+              <div class="ml-auto">
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-16
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-4/12
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--List item-->
+          <a
+            class="
+              relative
+              p-3
+              w-full
+              flex flex-col
+              rounded-md
+              bg-white
+              dark:bg-muted-800
+              border border-muted-200
+              dark:border-muted-700
+            "
+          >
+            <!--dot-->
+            <div
+              class="absolute top-3 right-3 h-2 w-2 rounded-full bg-muted-300"
+            ></div>
+            <div
+              class="
+                flex
+                xl:flex-row
+                flex-col
+                items-center
+                gap-2
+                font-medium
+                text-muted-900
+                dark:text-white
+                pb-2
+                mb-2
+                xl:border-b
+                border-muted-200 border-opacity-75
+                dark:border-muted-700
+                w-full
+              "
+            >
+              <img
+                src="/img/avatars/25.jpg"
+                class="w-8 h-8 rounded-full"
+                alt="user photo"
+              />
+              <div class="font-sans text-left leading-tight">
+                <h4 class="text-sm">Andy Stork</h4>
+                <p class="text-xs text-muted-400">New York, NY</p>
+              </div>
+            </div>
+            <div class="flex items-center w-full">
+              <div
+                class="
+                  text-xs
+                  py-1
+                  px-2
+                  leading-none
+                  dark:bg-muted-900
+                  bg-blue-100
+                  text-blue-500
+                  rounded-md
+                "
+              >
+                Design
+              </div>
+              <div class="ml-auto">
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-16
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-2/3
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!--List item-->
+          <a
+            class="
+              relative
+              p-3
+              w-full
+              flex flex-col
+              rounded-md
+              bg-white
+              dark:bg-muted-800
+              border border-muted-200
+              dark:border-muted-700
+            "
+          >
+            <div
+              class="
+                flex
+                xl:flex-row
+                flex-col
+                items-center
+                gap-2
+                font-medium
+                text-muted-900
+                dark:text-white
+                pb-2
+                mb-2
+                xl:border-b
+                border-muted-200 border-opacity-75
+                dark:border-muted-700
+                w-full
+              "
+            >
+              <img
+                src="/img/avatars/45.jpg"
+                class="w-8 h-8 rounded-full"
+                alt="user photo"
+              />
+              <div class="font-sans text-left leading-tight">
+                <h4 class="text-sm">Hakeem Jamal</h4>
+                <p class="text-xs text-muted-400">Columbus, OH</p>
+              </div>
+            </div>
+            <div class="flex items-center w-full">
+              <div
+                class="
+                  text-xs
+                  py-1
+                  px-2
+                  leading-none
+                  dark:bg-muted-900
+                  bg-green-100
+                  text-green-600
+                  rounded-md
+                "
+              >
+                Sales
+              </div>
+              <div class="ml-auto">
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-16
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-2/3
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--Content panel-->
+      <div
+        class="
+          flex-grow
+          bg-muted-100
+          dark:bg-muted-900
+          overflow-y-auto
+          slimscroll slimscroll-opaque
+        "
+      >
+        <!--Panel header-->
+        <div
+          class="
+            sm:px-7 sm:pt-7
+            px-4
+            pt-4
+            flex flex-col
+            w-full
+            border-b border-muted-200
+            bg-muted-100
+            dark:bg-muted-900 dark:text-white dark:border-muted-800
+            sticky
+            top-0
+            z-10
+          "
+        >
+          <!--Panel header profile-->
+          <div class="flex w-full items-center">
+            <div class="flex items-center gap-4">
+              <img
+                src="/img/avatars/29.jpg"
+                class="w-12 h-12 rounded-full"
+                alt="user photo"
+              />
+              <div class="text-left leading-tight">
+                <h4 class="font-heading text-lg font-semibold">
+                  Christina Chu
+                </h4>
+                <p class="font-sans text-sm text-muted-400">Los Angeles, CA</p>
+              </div>
+            </div>
+            <div class="ml-auto sm:flex hidden items-center justify-end">
+              <div class="text-right space-y-1">
+                <div class="text-xs text-muted-400 dark:text-muted-400">
+                  Progress: 67%
+                </div>
+                <div
+                  class="
+                    relative
+                    h-1
+                    w-24
+                    bg-slate-200
+                    dark:bg-slate-800
+                    overflow-hidden
+                    rounded-sm
+                  "
+                >
+                  <div
+                    class="
+                      absolute
+                      top-0
+                      left-0
+                      h-full
+                      rounded-sm
+                      transition
+                      duration-300
+                      bg-primary-500
+                      w-2/3
+                    "
+                  ></div>
+                </div>
+              </div>
+              <!--Context menu-->
+              <button
+                type="button"
+                class="
+                  w-8
+                  h-8
+                  ml-4
+                  bg-white
+                  dark:bg-muted-800
+                  text-muted-500
+                  dark:text-muted-400
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  border border-muted-200
+                  dark:border-muted-700
+                "
+              >
+                <i
+                  class="iconify w-4 h-4"
+                  data-icon="lucide:more-horizontal"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!--Panel header tabs-->
+          <div class="flex items-center space-x-3 font-sans sm:mt-7 mt-4">
+            <!--Item-->
+            <a
+              href="#"
+              class="px-3 border-b-2 border-primary-500 text-primary-500 pb-1.5"
+            >
+              History
+            </a>
+            <!--Item-->
+            <a
+              href="#"
+              class="
+                px-3
+                border-b-2 border-transparent
+                text-muted-400
+                dark:text-muted-500
+                pb-1.5
+              "
+            >
+              Profile
+            </a>
+            <!--Item-->
+            <a
+              href="#"
+              class="
+                px-3
+                border-b-2 border-transparent
+                text-muted-400
+                dark:text-muted-500
+                pb-1.5
+                sm:block
+                hidden
+              "
+            >
+              Skills
+            </a>
+            <!--Item-->
+            <a
+              href="#"
+              class="
+                px-3
+                border-b-2 border-transparent
+                text-muted-400
+                dark:text-muted-500
+                pb-1.5
+                sm:block
+                hidden
+              "
+            >
+              Applications
+            </a>
+            <!--Item-->
+            <a
+              href="#"
+              class="
+                px-3
+                border-b-2 border-transparent
+                text-muted-400
+                dark:text-muted-500
+                pb-1.5
+                sm:block
+                hidden
+              "
+            >
+              Results
+            </a>
+          </div>
+        </div>
+        <!--Tab content-->
+        <div class="sm:p-7 p-4">
+          <!--Toolbar-->
+          <div class="flex w-full items-center mb-7">
+            <!--Last 30 days-->
+            <button
+              class="
+                inline-flex
+                gap-1
+                mr-3
+                items-center
+                h-9
+                pl-2.5
+                pr-2
+                rounded-md
+                text-muted-500
+                dark:text-muted-400
+                bg-white
+                dark:bg-muted-800
+                border border-muted-200
+                dark:border-muted-700
+                leading-none
+                py-0
+              "
+            >
+              <i class="iconify w-4 h-4" data-icon="lucide:calendar"></i>
+              <span class="font-sans text-sm">Last 30d</span>
+              <i class="iconify w-4 h-4" data-icon="lucide:chevron-down"></i>
+            </button>
+            <!--Filter by-->
+            <button
+              class="
+                inline-flex
+                gap-1
+                mr-3
+                items-center
+                h-9
+                pl-2.5
+                pr-2
+                rounded-md
+                text-muted-500
+                dark:text-muted-400
+                bg-white
+                dark:bg-muted-800
+                border border-muted-200
+                dark:border-muted-700
+                leading-none
+                py-0
+              "
+            >
+              <span>Filter by</span>
+              <i class="iconify w-4 h-4" data-icon="lucide:chevron-down"></i>
+            </button>
+            <!--Pagination-->
+            <div
+              class="
+                ml-auto
+                text-muted-500 text-xs
+                sm:inline-flex sm:gap-1
+                hidden
+                items-center
+              "
+            >
+              <span class="font-sans mr-2">Page 2 of 4</span>
+              <!--Previous-->
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  h-8
+                  w-8
+                  justify-center
+                  text-muted-400
+                  bg-white
+                  dark:bg-muted-700
+                  mask mask-blob
+                  leading-none
+                  py-0
+                "
+              >
+                <i class="iconify w-4 h-4" data-icon="lucide:chevron-left"></i>
+              </button>
+              <!--Next-->
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  h-8
+                  w-8
+                  justify-center
+                  text-muted-400
+                  bg-white
+                  dark:bg-muted-700
+                  mask mask-blob
+                  leading-none
+                  py-0
+                "
+              >
+                <i class="iconify w-4 h-4" data-icon="lucide:chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <!--Data table-->
+          <table class="w-full text-left">
+            <!--Header-->
+            <thead>
+              <tr class="text-muted-400 text-sm">
+                <th
+                  class="
+                    font-medium
+                    px-3
+                    pt-0
+                    pb-3
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  Type
+                </th>
+                <th
+                  class="
+                    font-medium
+                    px-3
+                    pt-0
+                    pb-3
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  Reviewer
+                </th>
+                <th
+                  class="
+                    font-medium
+                    px-3
+                    pt-0
+                    pb-3
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    hidden
+                    md:table-cell
+                  "
+                >
+                  Status
+                </th>
+                <th
+                  class="
+                    font-medium
+                    px-3
+                    pt-0
+                    pb-3
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    sm:text-muted-400
+                    text-white
+                  "
+                >
+                  Date
+                </th>
+              </tr>
+            </thead>
+            <!--Body-->
+            <tbody class="text-muted-600 dark:text-muted-100">
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mail-check"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Application
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/32.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Nadia K.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-primary-100
+                      text-primary-600
+                      rounded-md
+                    "
+                  >
+                    New
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      27.09.2022
+                      <div class="text-muted-400 text-xs">9:18 AM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:file-text"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Submission
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/16.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Ron C.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-900
+                      bg-yellow-100
+                      text-yellow-600
+                      rounded-md
+                    "
+                  >
+                    Pending
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      25.09.2022
+                      <div class="text-muted-400 text-xs">3:39 PM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mic"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Interview #4
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/19.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Mike J.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-rose-100
+                      text-rose-600
+                      rounded-md
+                    "
+                  >
+                    Cancelled
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      21.09.2022
+                      <div class="text-muted-400 text-xs">10:13 AM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:phone-call"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Call
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="w-7 h-7 border border-muted-200 rounded-full"
+                      src="/img/avatars/31.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Amy D.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      18.09.2022
+                      <div class="text-muted-400 text-xs">8:44 AM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mic"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Interview #3
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/30.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Sandra G.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      15.09.2022
+                      <div class="text-muted-400 text-xs">11:00 AM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:file-text"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Submission
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/21.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Melany D.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-900
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      11.09.2022
+                      <div class="text-muted-400 text-xs">5:32 PM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mail-check"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Application
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/32.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Nadia K.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-primary-100
+                      text-primary-600
+                      rounded-md
+                    "
+                  >
+                    New
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      6.09.2022
+                      <div class="text-muted-400 text-xs">2:34 PM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mic"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Interview #2
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/19.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Mike J.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      29.08.2022
+                      <div class="text-muted-400 text-xs">1:00 PM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mail-check"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Application
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/32.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Nadia K.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      24.08.2022
+                      <div class="text-muted-400 text-xs">10:47 AM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--Row-->
+              <tr>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="iconify w-5 h-5 text-primary-500"
+                      data-icon="lucide:mic"
+                    ></i>
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Interview #1
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="
+                        w-7
+                        h-7
+                        border border-muted-200
+                        dark:border-muted-800
+                        rounded-full
+                      "
+                      src="/img/avatars/31.jpg"
+                      alt="Reviewer photo"
+                    />
+                    <span class="font-sans text-muted-500 dark:text-muted-400">
+                      Anna P.
+                    </span>
+                  </div>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                    md:table-cell
+                    hidden
+                  "
+                >
+                  <span
+                    class="
+                      text-xs
+                      py-1
+                      px-2
+                      leading-none
+                      dark:bg-muted-800
+                      bg-green-100
+                      text-green-600
+                      rounded-md
+                    "
+                  >
+                    Complete
+                  </span>
+                </td>
+                <!--Cell-->
+                <td
+                  class="
+                    sm:p-3
+                    py-2
+                    px-1
+                    border-b border-muted-200
+                    dark:border-muted-800
+                  "
+                >
+                  <div class="flex items-center font-sans">
+                    <div class="sm:flex hidden flex-col">
+                      15.08.2022
+                      <div class="text-muted-400 text-xs">4:30 PM</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

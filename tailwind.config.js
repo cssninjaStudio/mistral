@@ -157,6 +157,16 @@ module.exports = {
     require('@vidstack/player/tailwind.cjs'),
     plugin(function ({ addUtilities }) {
       addUtilities({
+        '.slimscroll::-webkit-scrollbar': {
+          width: '6px',
+        },
+        '.slimscroll::-webkit-scrollbar-thumb': {
+          borderRadius: '.75rem',
+          background: 'rgba(0, 0, 0, 0.1)',
+        },
+        '.slimscroll-opaque::-webkit-scrollbar-thumb': {
+          background: 'rgba(0, 0, 0, 0) !important',
+        },
         '.mask': {
           'mask-size': 'contain',
           'mask-repeat': 'no-repeat',

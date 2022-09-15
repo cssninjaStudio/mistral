@@ -4,6 +4,8 @@ export function navbar() {
     height: 60,
     mobileOpen: false,
     isChecked: false,
+    megamenuOpened: false,
+    openedMegamenu: '',
     scroll() {
       let scrollValue = window.scrollY
       if (scrollValue >= this.height) {
@@ -11,6 +13,11 @@ export function navbar() {
       } else {
         this.scrolled = false
       }
+    },
+    openSearch() {
+      const input = document.getElementById('navbar-search-field')
+      this.$store.app.searchOpened = true
+      input.focus()
     },
     initScrollAnchors() {
       document

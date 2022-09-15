@@ -1,11 +1,9 @@
 <nav
   class="
-    text-muted-700
-    body-font
     fixed
     w-screen
     z-50
-    transition
+    transition-all
     duration-300
     ease-in-out
     flex flex-col
@@ -16,9 +14,10 @@
   x-data="navbar()"
   x-init="initTheme()"
   x-on:scroll.window="scroll()"
+  x-on:mouseleave="megamenuOpened = false, openedMegamenu = ''"
   x-bind:class="{
-        'bg-white dark:bg-muted-800 shadow-lg shadow-muted-400/10 dark:shadow-muted-800/10': scrolled,
-        '': !scrolled,
+        'bg-white dark:bg-muted-800 shadow-lg shadow-muted-400/10 dark:shadow-muted-800/10': scrolled || megamenuOpened,
+        '': !scrolled || !megamenuOpened,
         'bg-white dark:bg-muted-800': mobileOpen,
         '': !mobileOpen
     }"
@@ -127,47 +126,95 @@
           lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0 lg:gap-x-4
         "
       >
-        <li>
-          <a
-            href="#"
+        <li
+          class="relative"
+          x-on:mouseover="megamenuOpened = true, openedMegamenu = 'megamenu-1'"
+        >
+          <button
+            type="button"
             class="
-              block
+              relative
+              inline-flex
+              items-center
+              gap-1
               text-base
               font-sans
+              text-muted-600
               hover:text-primary-500
               dark:text-muted-200 dark:hover:text-primary-400
               py-2
               md:mx-2
               tw-accessibility
             "
+            :class="megamenuOpened ? 'z-40' : 'z-50'"
           >
-            Product
-          </a>
+            <span>Product</span>
+            <i
+              class="
+                iconify
+                w-5
+                h-5
+                text-muted-400
+                dark:text-muted-300
+                transition-transform
+                duration-300
+              "
+              :class="openedMegamenu === 'megamenu-1' && megamenuOpened ? 'rotate-180' : ''"
+              data-icon="lucide:chevron-down"
+            ></i>
+          </button>
+
+          <!--Megamenu-->
+          {{> navigation/megamenu-large}}
         </li>
-        <li>
-          <a
-            href="/about.html"
+        <li
+          class="relative"
+          x-on:mouseover="megamenuOpened = true, openedMegamenu = 'megamenu-2'"
+        >
+          <button
+            type="button"
             class="
-              block
+              relative
+              inline-flex
+              items-center
+              gap-1
               text-base
               font-sans
+              text-muted-600
               hover:text-primary-500
-              py-2
               dark:text-muted-200 dark:hover:text-primary-400
+              py-2
               md:mx-2
               tw-accessibility
             "
+            :class="megamenuOpened ? 'z-40' : 'z-50'"
           >
-            Company
-          </a>
+            <span>Company</span>
+            <i
+              class="
+                iconify
+                w-5
+                h-5
+                text-muted-400
+                dark:text-muted-300
+                transition-transform
+                duration-300
+              "
+              :class="openedMegamenu === 'megamenu-2' && megamenuOpened ? 'rotate-180' : ''"
+              data-icon="lucide:chevron-down"
+            ></i>
+          </button>
+          <!--Megamenu-->
+          {{> navigation/megamenu-slim}}
         </li>
-        <li>
+        <li x-on:mouseover="megamenuOpened = false, openedMegamenu = ''">
           <a
             href="/pricing.html"
             class="
               block
               text-base
               font-sans
+              text-muted-600
               hover:text-primary-500
               dark:text-muted-200 dark:hover:text-primary-400
               py-2
@@ -178,30 +225,14 @@
             Pricing
           </a>
         </li>
-        <li>
-          <a
-            href="/blog.html"
-            class="
-              block
-              text-base
-              font-sans
-              hover:text-primary-500
-              dark:text-muted-200 dark:hover:text-primary-400
-              py-2
-              md:mx-2
-              tw-accessibility
-            "
-          >
-            Blog
-          </a>
-        </li>
-        <li>
+        <li x-on:mouseover="megamenuOpened = false, openedMegamenu = ''">
           <a
             href="/login.html"
             class="
               block
               text-base
               font-sans
+              text-muted-600
               hover:text-primary-500
               dark:text-muted-200 dark:hover:text-primary-400
               py-2
@@ -249,8 +280,8 @@
     </div>
 
     <div class="hidden lg:flex lg:w-1/5 lg:justify-end lg:gap-x-4">
-      <a
-        href="#"
+      <button
+        type="button"
         class="
           group
           h-12
@@ -261,6 +292,7 @@
           justify-center
           tw-accessibility
         "
+        @click="openSearch()"
       >
         <div
           class="
@@ -279,7 +311,7 @@
         >
           <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
         </div>
-      </a>
+      </button>
       <div class="h-12 w-12 flex items-center justify-center">
         <!--Dark mode-->
         {{> theme/theme-toggler}}

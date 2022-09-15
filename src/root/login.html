@@ -63,7 +63,7 @@
           Login with social media or your credentials
         </p>
         <!-- 	Social Sign Up Buttons	 -->
-        <div class="flex justify-between gap-4">
+        <div class="flex flex-wrap justify-between gap-4">
           <!--Google button-->
           <button
             class="
@@ -91,6 +91,8 @@
           <!--Twitter button-->
           <button
             class="
+              w-[calc(50%_-_0.5rem)]
+              md:w-auto
               py-4
               px-5
               rounded
@@ -102,15 +104,21 @@
               dark:text-muted-400
               transition-colors
               duration-300
+              text-center
               cursor-pointer
               tw-accessibility
             "
           >
-            <i class="iconify w-4 h-4" data-icon="fa6-brands:twitter"></i>
+            <i
+              class="iconify w-4 h-4 mx-auto"
+              data-icon="fa6-brands:twitter"
+            ></i>
           </button>
           <!--Linkedin button-->
           <button
             class="
+              w-[calc(50%_-_0.5rem)]
+              md:w-auto
               py-4
               px-5
               rounded
@@ -122,11 +130,15 @@
               dark:text-muted-400
               transition-colors
               duration-300
+              text-center
               cursor-pointer
               tw-accessibility
             "
           >
-            <i class="iconify w-4 h-4" data-icon="fa6-brands:linkedin-in"></i>
+            <i
+              class="iconify w-4 h-4 mx-auto"
+              data-icon="fa6-brands:linkedin-in"
+            ></i>
           </button>
         </div>
         <!-- 'or' divider		 -->
@@ -414,13 +426,24 @@
       </div>
     </div>
   </div>
-  <div class="hidden lg:block lg:w-3/5 relative w-0 flex-1">
-    <!--Designed by: https://dribbble.com/michaelstevanush-->
-    <img
-      class="absolute inset-0 h-full w-full object-cover"
-      src="/img/apps/design/1.png"
-      alt="App mockup"
-    />
+  <div
+    class="
+      hidden
+      lg:flex
+      items-center
+      justify-center
+      lg:w-3/5
+      relative
+      w-0
+      flex-1
+      bg-muted-100
+      dark:bg-muted-1000
+    "
+  >
+    <div class="w-full max-w-4xl mx-auto">
+      <!--Feature-->
+      {{> section/side-content/left-3/feature}}
+    </div>
   </div>
 </div>
 

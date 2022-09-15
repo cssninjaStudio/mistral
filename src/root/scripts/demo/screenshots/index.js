@@ -4,7 +4,7 @@ const demos = [
     screenshotLight: '/img/screenshots/home.png',
     screenshotDark: '/img/screenshots/home-dark.png',
     link: '/home.html',
-    new: true,
+    new: false,
   },
   {
     name: 'Product',

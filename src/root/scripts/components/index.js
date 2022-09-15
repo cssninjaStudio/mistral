@@ -1,5 +1,6 @@
 import { layout } from './layout'
 import { navbar } from './navbar'
+import { search } from './search'
 import { backtotop } from './backtotop'
 import { boxCarousel, cardCarousel } from './carousel'
 import { video } from './video'
@@ -11,6 +12,7 @@ import { blog } from './blog'
 
 window.layout = layout
 window.navbar = navbar
+window.search = search
 window.backtotop = backtotop
 window.boxCarousel = boxCarousel
 window.cardCarousel = cardCarousel

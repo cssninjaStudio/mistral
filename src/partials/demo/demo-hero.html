@@ -25,7 +25,6 @@
         <div
           class="
             relative
-            top-6
             w-full
             h-full
             min-h-screen
@@ -33,11 +32,11 @@
             pt-32
             md:pt-20
             ltablet:-m-3
-            lg:-m-3
+            lg:-mx-3
           "
         >
           <!--Column-->
-          <div class="relative w-full p-6 z-10">
+          <div class="relative w-full px-6 my-6 z-10">
             <div class="max-w-2xl space-y-4 text-center mx-auto ptablet:mt-32">
               <h1
                 class="
@@ -136,6 +135,7 @@
                     tw-accessibility
                     transition-all
                     duration-300
+                    scroll-link
                   "
                 >
                   Get Started
@@ -154,8 +154,6 @@
               mx-auto
               px-0
               md:px-6
-              ltablet:py-6
-              lg:py-6
               pt-6
               mt-auto
             "
@@ -193,10 +191,9 @@
 
             <img
               class="
-                block
+                hidden
                 absolute
-                bottom-0
-                md:bottom-8
+                md:block md:bottom-0
                 -left-8
                 max-w-[100px]
                 ltablet:max-w-[180px]

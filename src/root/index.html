@@ -1,35 +1,59 @@
 <!--Start Layout-->
-{{#> default }}
+{{#> minimal }}
+
+<!--Navbar-->
+{{> demo/demo-navbar}}
 
 <!--Hero-->
-{{> hero/home/hero}}
+{{> demo/demo-hero}}
 
-<!--Features-->
-{{> section/icon-boxes/icon-boxes}}
+<section class="w-full py-12 px-4 bg-white dark:bg-muted-900">
+  <div class="w-full max-w-7xl mx-auto">
+    <!--Layout-->
+    <div
+      class="
+        w-full
+        flex flex-col
+        ltablet:flex-row
+        lg:flex-row
+        gap-0
+        ltablet:gap-10
+        lg:gap-28
+      "
+    >
+      <!--Column-->
+      <div class="w-full ltablet:w-8/12 lg:w-8/12">
+        <!--Techs-->
+        {{> demo/demo-techs}}
 
-<!--Side section-->
-{{> section/side-content/left-1/content}}
+        <!--Features-->
+        {{> demo/demo-features}}
 
-<!--Side section-->
-{{> section/side-content/right-1/content}}
+        <!--Template demos-->
+        {{> demo/demo-screenshots}}
 
-<!--Side section-->
-{{> section/side-content/left-2/content}}
+        <!--FAQ-->
+        {{> demo/demo-faq}}
+      </div>
+      <!--Column-->
+      <div class="w-full ltablet:w-4/12 lg:w-4/12">
+        <div class="h-full pt-10">
+          <!--Purchase card-->
+          {{> demo/demo-purchase}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!--Testimonial-->
-{{> section/testimonials/single/single-1}}
+<!--Call to action-->
+{{> demo/demo-cta}}
 
-<!--Recent candidates-->
-{{> section/people-cards/people-cards}}
+<!--Demo footer-->
+{{> demo/demo-footer}}
 
-<!--Browse jobs-->
-{{> section/browse-jobs/browse-jobs}}
-
-<!--Testimonial-->
-{{> section/testimonials/single/single-2}}
-
-<!--CTA-->
-{{> section/cta/cta-1}}
+<!--Back to top button-->
+{{> misc/backtotop}}
 
 <!--End Layout-->
-{{/default}}
+{{/minimal}}

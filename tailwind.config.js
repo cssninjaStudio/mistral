@@ -25,6 +25,21 @@ module.exports = {
         },
       },
       colors: {
+        slate: {
+          1000: '#0a101f',
+        },
+        gray: {
+          1000: '#080c14',
+        },
+        zinc: {
+          1000: '#101012',
+        },
+        neutral: {
+          1000: '#080808',
+        },
+        stone: {
+          1000: '#0f0d0c',
+        },
         muted: colors.slate,
         primary: colors.indigo,
         info: colors.sky,

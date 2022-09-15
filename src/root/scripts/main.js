@@ -11,6 +11,7 @@ import intersect from '@alpinejs/intersect'
 import collapse from '@alpinejs/collapse'
 import persist from '@alpinejs/persist'
 
+import './demo'
 import './components'
 
 window.Alpine = Alpine

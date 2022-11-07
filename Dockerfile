@@ -12,7 +12,7 @@ COPY . .
 RUN pnpm build
 
 RUN npx obscure
-RUN obscure ./dist/**/*.css --apply ./dist/**/*.html --output ./
+RUN pnpm mangle
 
 
 FROM bitnami/nginx:1.22 AS prod

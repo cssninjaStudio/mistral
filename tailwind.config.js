@@ -25,6 +25,12 @@ module.exports = {
         },
       },
       colors: {
+        primary: colors.indigo,
+        info: colors.sky,
+        success: colors.teal,
+        warning: colors.amber,
+        danger: colors.rose,
+        muted: colors.slate,
         slate: {
           1000: '#0a101f',
         },
@@ -40,12 +46,6 @@ module.exports = {
         stone: {
           1000: '#0f0d0c',
         },
-        muted: colors.slate,
-        primary: colors.indigo,
-        info: colors.sky,
-        success: colors.teal,
-        warning: colors.amber,
-        danger: colors.rose,
       },
       fontFamily: {
         sans: ['Roboto Flex', 'sans-serif'],

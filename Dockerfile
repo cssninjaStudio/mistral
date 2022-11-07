@@ -11,7 +11,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
 
-RUN npx obscure -g
+RUN npx obscure@1.0.1 -g
 RUN pnpm mangle
 
 

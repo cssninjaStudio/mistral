@@ -11,6 +11,9 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
 
+RUN npx obscure
+RUN obscure ./dist/**/*.css --apply ./dist/**/*.html --output ./
+
 
 FROM bitnami/nginx:1.22 AS prod
 WORKDIR /app

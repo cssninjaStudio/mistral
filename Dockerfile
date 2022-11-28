@@ -11,10 +11,6 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
 
-RUN npx obscure@1.0.1
-RUN pnpm mangle
-
-
 FROM bitnami/nginx:1.22 AS prod
 WORKDIR /app
 

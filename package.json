@@ -1,6 +1,7 @@
 {
-  "name": "mistral-landing-page",
-  "version": "1.0.0",
+  "name": "mistral",
+  "description": "Mistral - Tailwind CSS + Alpine JS landing page",
+  "version": "0.0.0",
   "license": "UNLICENCED",
   "private": "true",
   "scripts": {

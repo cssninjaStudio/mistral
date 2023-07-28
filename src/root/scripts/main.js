@@ -1,4 +1,5 @@
 import '@purge-icons/generated'
+import 'vidstack/icons'
 import 'vidstack/define/media-player.js'
 import 'vidstack/define/media-poster.js'
 import 'vidstack/define/media-play-button.js'

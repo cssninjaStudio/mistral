@@ -23,6 +23,9 @@ dependencies:
   lit:
     specifier: 2.7.6
     version: 2.7.6
+  media-icons:
+    specifier: ^0.10.0
+    version: 0.10.0
   prism-theme-vars:
     specifier: 0.2.4
     version: 0.2.4
@@ -30,11 +33,11 @@ dependencies:
     specifier: 1.29.0
     version: 1.29.0
   swiper:
-    specifier: 9.2.4
-    version: 9.2.4
+    specifier: 10.0.4
+    version: 10.0.4
   vidstack:
-    specifier: 0.4.5
-    version: 0.4.5
+    specifier: 0.6.13
+    version: 0.6.13
 
 devDependencies:
   '@iconify/json':
@@ -86,8 +89,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   prettier:
-    specifier: 2.8.8
-    version: 2.8.8
+    specifier: 3.0.0
+    version: 3.0.0
   stylelint:
     specifier: 15.10.2
     version: 15.10.2
@@ -2054,6 +2057,7 @@ packages:
 
   /@types/node@20.4.5:
     resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
+    requiresBuild: true
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -2668,6 +2672,7 @@ packages:
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+    requiresBuild: true
     dev: true
 
   /ci-info@1.6.0:
@@ -4054,6 +4059,7 @@ packages:
   /fs-minipass@2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
     engines: {node: '>= 8'}
+    requiresBuild: true
     dependencies:
       minipass: 3.3.6
     dev: true
@@ -5291,8 +5297,8 @@ packages:
     resolution: {integrity: sha512-APMBEanjybaPzUrfqU0IMU5I0AswKMH7k8OTLs0vvV4KZpExkTkY87nR/zpbuTPj+gARop7aGUbl11pnDfW6xg==}
     dev: true
 
-  /maverick.js@0.33.1:
-    resolution: {integrity: sha512-p8L5V62CV6TmHAngmRAopp231oJKeH77mJja5SsKOfvzrPRoThT/Jo9U0jMRB5iMykqkvyg2J5V5Agn6FPXDWQ==}
+  /maverick.js@0.37.0:
+    resolution: {integrity: sha512-1Dk/9rienLiihlktVvH04ADC2UJTMflC1fOMVQCCaQAaz7hgzDI5i0p/arFbDM52hFFiIcq4RdXtYz47SgsLgw==}
     engines: {node: '>=16'}
     dependencies:
       '@maverick-js/signals': 5.11.2
@@ -5313,13 +5319,13 @@ packages:
     dev: true
     optional: true
 
-  /media-captions@0.0.8:
-    resolution: {integrity: sha512-gX6ozU5smrAb90FwI+wd1VnqkwcAQ2NF8l72KZ67k+o3Vr0wYBAsTFRfdOePqde9IBhfBZbZsYEA5509npwtZA==}
+  /media-captions@0.0.18:
+    resolution: {integrity: sha512-JW18P6FuHdyLSGwC4TQ0kF3WdNj/+wMw2cKOb8BnmY6vSJGtnwJ+vkYj+IjHOV34j3XMc70HDeB/QYKR7E7fuQ==}
     engines: {node: '>=16'}
     dev: false
 
-  /media-icons@0.4.2:
-    resolution: {integrity: sha512-jrxoQzxsZFyzt6P3CoGZWa6FVKoR/Ii1plbVjtyTSyQGpeVWkJ++0oBAwGOv/F9mWRxmGkaQ04uEIKTFouRG1w==}
+  /media-icons@0.10.0:
+    resolution: {integrity: sha512-M9loX7KUWsID3T8pRSN6/+MNKPEm9dNteqJk7yfo9ZaAIEYzEd07jWTVRlRmgVMKoAh1kY7funD6Qe1prrTJMQ==}
     engines: {node: '>=16'}
     dev: false
 
@@ -5544,6 +5550,7 @@ packages:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
     engines: {node: '>=10'}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /ms@2.1.2:
@@ -6512,9 +6519,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
@@ -7087,10 +7094,6 @@ packages:
     resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
     dev: true
 
-  /ssr-window@4.0.2:
-    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
-    dev: false
-
   /ssri@10.0.4:
     resolution: {integrity: sha512-12+IR2CB2C28MMAw0Ncqwj5QbTcs0nGIhgJzYWzDkb21vWmfNI83KS4f3Ci6GI98WreIfG7o9UXp3C0qbpA8nQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -7380,11 +7383,9 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /swiper@9.2.4:
-    resolution: {integrity: sha512-L7y3K/iiMXNYQ94FbfcJn7jex4QPnS4+voXGupTdC+UHW4XrR40QDdm4c9hXJ+Br0Il7PP0vP1W3goM9/Ly6Sg==}
+  /swiper@10.0.4:
+    resolution: {integrity: sha512-DlNR3KiaVkPep6RraZ2tNr7lvyuzELuR+4NZr4wO42t0UworIO3DxDlz8b5Q3uUioh7cJad99EdRJLkPF+r8Ag==}
     engines: {node: '>= 4.7.0'}
-    dependencies:
-      ssr-window: 4.0.2
     dev: false
 
   /symbol-tree@3.2.4:
@@ -7785,13 +7786,12 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vidstack@0.4.5:
-    resolution: {integrity: sha512-6CFkWRSvDQAd91WQ6PZ/ovwbGFDI8pLuIA0swcDLLAOM6MiKWFd/gFjJ/x7+DAcCf0hqOngO34MJhG3zTZQtcQ==}
+  /vidstack@0.6.13:
+    resolution: {integrity: sha512-g5wH6Hfc4EQqOI0Mm7qW4D1DWPZfQnlATLZuqpuVAKI8HOz4UGfd1v48MLK9cR+ZfPjVL4/iZLu7YOIdSX3L2g==}
     engines: {node: '>=16'}
     dependencies:
-      maverick.js: 0.33.1
-      media-captions: 0.0.8
-      media-icons: 0.4.2
+      maverick.js: 0.37.0
+      media-captions: 0.0.18
       type-fest: 3.13.1
     dev: false
 

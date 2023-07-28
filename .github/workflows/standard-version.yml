@@ -38,7 +38,7 @@ jobs:
       - run: |
           git config user.name digisquad-bot
           git config user.email admin@digisquad.io
-          pnpm dlx standard-version ${{ github.event.inputs.options }}
+          npx standard-version ${{ github.event.inputs.options }} >> $GITHUB_OUTPUT
           git push --follow-tags origin main
         env:
           GITHUB_TOKEN: ${{ secrets.APP_GITHUB_TOKEN }}

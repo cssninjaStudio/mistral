@@ -170,9 +170,10 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
-    require('@vidstack/player/tailwind.cjs'),
+    require('vidstack/tailwind.cjs')({
+      prefix: 'media', // paused:... -> media-paused:...
+    }),
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.slimscroll::-webkit-scrollbar': {

@@ -1,8 +1,8 @@
 import '@purge-icons/generated'
 import 'vidstack/define/media-player.js'
-import 'vidstack/define/media-poster.js';
-import 'vidstack/define/media-play-button.js';
-import 'vidstack/define/media-icon.js';
+import 'vidstack/define/media-poster.js'
+import 'vidstack/define/media-play-button.js'
+import 'vidstack/define/media-icon.js'
 import 'swiper/css/bundle'
 
 //Alpine and plugins import

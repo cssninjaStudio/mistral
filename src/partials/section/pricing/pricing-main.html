@@ -3,38 +3,17 @@
     <div class="w-full min-h-screen flex items-center overflow-hidden">
       <!--Content-->
       <div
-        class="
-          w-full
-          h-full
-          flex flex-col
-          justify-between
-          px-6
-          pt-36
-          lg:pt-36
-          pb-16
-        "
+        class="w-full h-full flex flex-col justify-between px-6 pt-36 lg:pt-36 pb-16"
       >
         <!--Title-->
         <div class="max-w-3xl mx-auto space-y-4 text-center">
           <h1
-            class="
-              font-heading font-bold
-              text-5xl
-              md:text-5xl
-              text-muted-800
-              dark:text-white
-            "
+            class="font-heading font-bold text-5xl md:text-5xl text-muted-800 dark:text-white"
           >
             Dead simple pricing.
           </h1>
           <p
-            class="
-              font-sans
-              text-base
-              md:text-lg
-              text-muted-500
-              dark:text-muted-400
-            "
+            class="font-sans text-base md:text-lg text-muted-500 dark:text-muted-400"
           >
             Comprehensive plans that will allow your business to scale
             seamlessly.
@@ -43,16 +22,7 @@
 
         <!--Switcher-->
         <div
-          class="
-            w-full
-            max-w-xs
-            mx-auto
-            flex
-            justify-center
-            items-center
-            gap-8
-            py-6
-          "
+          class="w-full max-w-xs mx-auto flex justify-center items-center gap-8 py-6"
         >
           <span
             class="font-sans text-sm font-semibold"
@@ -63,71 +33,17 @@
           <label for="pricing-switcher" class="relative">
             <input
               type="checkbox"
-              class="
-                peer
-                absolute
-                top-0
-                left-0
-                w-full
-                h-full
-                opacity-0
-                cursor-pointer
-                z-30
-              "
+              class="peer absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-30"
               @click="toggle()"
             />
             <span
-              class="
-                block
-                relative
-                h-8
-                w-16
-                bg-muted-200
-                dark:bg-muted-800
-                peer-checked:bg-muted-300
-                dark:peer-checked:bg-primary-800
-                rounded-full
-                z-10
-                transition-colors
-                duration-300
-                peer-focus:tw-accessibility-static
-              "
+              class="block relative h-8 w-16 bg-muted-200 dark:bg-muted-800 peer-checked:bg-muted-300 dark:peer-checked:bg-primary-800 rounded-full z-10 transition-colors duration-300 peer-focus:tw-accessibility-static"
             ></span>
             <span
-              class="
-                absolute
-                -top-2
-                -left-4
-                w-12
-                h-12
-                flex
-                items-center
-                justify-center
-                bg-muted-200
-                dark:bg-muted-700
-                text-muted-300
-                dark:text-muted-700
-                mask mask-hexed
-                cursor-pointer
-                z-20
-                peer-checked:translate-x-full
-                peer-checked:rotate-[360deg]
-                peer-checked:text-primary-500
-                transition-all
-                duration-500
-              "
+              class="absolute -top-2 -left-4 w-12 h-12 flex items-center justify-center bg-muted-200 dark:bg-muted-700 text-muted-300 dark:text-muted-700 mask mask-hexed cursor-pointer z-20 peer-checked:translate-x-full peer-checked:rotate-[360deg] peer-checked:text-primary-500 transition-all duration-500"
             >
               <span
-                class="
-                  w-11
-                  h-11
-                  flex
-                  items-center
-                  justify-center
-                  bg-white
-                  dark:bg-muted-800
-                  mask mask-hexed
-                "
+                class="w-11 h-11 flex items-center justify-center bg-white dark:bg-muted-800 mask mask-hexed"
               >
                 <i
                   class="iconify w-5 h-5"
@@ -147,30 +63,11 @@
         <!--Pricing overview-->
         <div class="py-6 flex flex-wrap md:items-center w-full">
           <div
-            class="
-              bg-white
-              dark:bg-muted-800
-              border border-muted-200
-              dark:border-muted-700
-              rounded
-              w-full
-              md:w-1/2
-              z-10
-              shadow-xl shadow-muted-400/10
-              dark:shadow-muted-800/10
-            "
+            class="bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded w-full md:w-1/2 z-10 shadow-xl shadow-muted-400/10 dark:shadow-muted-800/10"
           >
             <!--Header-->
             <div
-              class="
-                flex flex-col
-                py-8
-                border-b border-muted-200
-                dark:border-muted-700
-                text-center text-primary-500
-                font-semibold
-                uppercase
-              "
+              class="flex flex-col py-8 border-b border-muted-200 dark:border-muted-700 text-center text-primary-500 font-semibold uppercase"
             >
               <div class="w-12 mx-auto mb-1 text-muted-300 dark:text-muted-600">
                 {{> shapes/atom-1}}
@@ -184,12 +81,7 @@
                 <!--Column-->
                 <div class="w-1/2 flex justify-center items-center gap-2">
                   <span
-                    class="
-                      text-3xl
-                      font-semibold
-                      text-muted-800
-                      dark:text-white
-                    "
+                    class="text-3xl font-semibold text-muted-800 dark:text-white"
                   >
                     <template x-if="!yearly">
                       <span>$99</span>
@@ -216,12 +108,7 @@
                     data-icon="lucide:plus"
                   ></i>
                   <span
-                    class="
-                      text-3xl
-                      font-semibold
-                      text-muted-800
-                      dark:text-white
-                    "
+                    class="text-3xl font-semibold text-muted-800 dark:text-white"
                   >
                     <template x-if="!yearly">
                       <span>$25</span>
@@ -253,12 +140,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -272,12 +154,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -291,12 +168,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -314,12 +186,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -333,12 +200,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -352,12 +214,7 @@
                   <!--Subfeature-->
                   <div class="w-3/4 md:w-1/2 mx-auto flex items-center mb-4">
                     <span
-                      class="
-                        inline-flex
-                        justify-center
-                        bg-green-lighter
-                        rounded-full
-                      "
+                      class="inline-flex justify-center bg-green-lighter rounded-full"
                     >
                       <i
                         class="iconify mx-2 h-5 w-5 text-primary-500"
@@ -375,37 +232,11 @@
             <!--Link-->
             <a href="#">
               <div
-                class="
-                  group
-                  py-8
-                  bg-muted-50
-                  dark:bg-muted-700
-                  hover:bg-muted-100
-                  dark:hover:bg-muted-700/40
-                  text-primary-500
-                  rounded rounded-t-none
-                  text-center
-                  uppercase
-                  font-sans font-semibold
-                  text-sm
-                  flex
-                  items-center
-                  justify-center
-                  transition-colors
-                  duration-300
-                "
+                class="group py-8 bg-muted-50 dark:bg-muted-700 hover:bg-muted-100 dark:hover:bg-muted-700/40 text-primary-500 rounded rounded-t-none text-center uppercase font-sans font-semibold text-sm flex items-center justify-center transition-colors duration-300"
               >
                 <span>Get Started</span>
                 <i
-                  class="
-                    iconify
-                    mx-2
-                    h-4
-                    w-4
-                    group-hover:translate-x-1
-                    transition-transform
-                    duration-300
-                  "
+                  class="iconify mx-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                   data-icon="lucide:arrow-right"
                 ></i>
               </div>
@@ -414,32 +245,11 @@
 
           <!--Enterprise-->
           <div
-            class="
-              bg-muted-900
-              dark:bg-primary-800
-              rounded
-              shadow
-              w-full
-              md:w-1/2
-              z-0
-              mx-auto
-              mt-4
-              md:-mt-0 md:-ml-1
-            "
+            class="bg-muted-900 dark:bg-primary-800 rounded shadow w-full md:w-1/2 z-0 mx-auto mt-4 md:-mt-0 md:-ml-1"
           >
             <!--Header-->
             <div
-              class="
-                flex flex-col
-                font-heading
-                py-8
-                text-center text-white/90
-                font-semibold
-                uppercase
-                mb-8
-                border border-muted-700
-                dark:border-primary-700
-              "
+              class="flex flex-col font-heading py-8 text-center text-white/90 font-semibold uppercase mb-8 border border-muted-700 dark:border-primary-700"
             >
               <div class="w-12 mx-auto mb-1 text-muted-300 dark:text-white">
                 {{> shapes/atom-2}}
@@ -465,12 +275,7 @@
                   <tr>
                     <!--Feature-->
                     <td
-                      class="
-                        px-2
-                        py-4
-                        border border-muted-700
-                        dark:border-primary-700
-                      "
+                      class="px-2 py-4 border border-muted-700 dark:border-primary-700"
                     >
                       <div class="flex items-center gap-1 px-3">
                         <i
@@ -482,12 +287,7 @@
                     </td>
                     <!--Feature-->
                     <td
-                      class="
-                        px-2
-                        py-4
-                        border border-muted-700
-                        dark:border-primary-700
-                      "
+                      class="px-2 py-4 border border-muted-700 dark:border-primary-700"
                     >
                       <div class="flex items-center gap-1 px-3">
                         <i
@@ -501,12 +301,7 @@
                   <tr>
                     <!--Feature-->
                     <td
-                      class="
-                        px-2
-                        py-4
-                        border border-muted-700
-                        dark:border-primary-700
-                      "
+                      class="px-2 py-4 border border-muted-700 dark:border-primary-700"
                     >
                       <div class="flex items-center gap-1 px-3">
                         <i
@@ -518,12 +313,7 @@
                     </td>
                     <!--Feature-->
                     <td
-                      class="
-                        px-2
-                        py-4
-                        border border-muted-700
-                        dark:border-primary-700
-                      "
+                      class="px-2 py-4 border border-muted-700 dark:border-primary-700"
                     >
                       <div class="flex items-center gap-1 px-3">
                         <i
@@ -541,37 +331,11 @@
             <!--Link-->
             <a href="#">
               <div
-                class="
-                  group
-                  py-8
-                  bg-muted-900
-                  dark:bg-primary-800
-                  hover:bg-muted-800
-                  dark:hover:bg-primary-700/80
-                  text-white
-                  rounded rounded-t-none
-                  text-center
-                  uppercase
-                  font-sans font-medium
-                  text-sm
-                  flex
-                  items-center
-                  justify-center
-                  transition-colors
-                  duration-300
-                "
+                class="group py-8 bg-muted-900 dark:bg-primary-800 hover:bg-muted-800 dark:hover:bg-primary-700/80 text-white rounded rounded-t-none text-center uppercase font-sans font-medium text-sm flex items-center justify-center transition-colors duration-300"
               >
                 <span>Contact sales</span>
                 <i
-                  class="
-                    iconify
-                    mx-2
-                    h-4
-                    w-4
-                    group-hover:translate-x-1
-                    transition-transform
-                    duration-300
-                  "
+                  class="iconify mx-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                   data-icon="lucide:arrow-right"
                 ></i>
               </div>

@@ -11,13 +11,7 @@ on:
 
 jobs:
   standard-version:
-    # setup strategy matrix, so we can share same pnpm cache
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [18]
-    runs-on: ${{ matrix.os }}
-
+    runs-on: ubuntu-latest
     steps:
       # Checkout action retreive the source (git clone)
       - uses: actions/checkout@v3
@@ -31,7 +25,7 @@ jobs:
       # Setup pnpm with cache
       - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
           cache: "pnpm"
 
       # Run "standard-version", which may create a new tag

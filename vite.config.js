@@ -1,4 +1,5 @@
-// vite.config.js
+// vite configuration file
+// read more about it here: https://vitejs.dev/config/
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import fastglob from 'fast-glob'
@@ -25,10 +26,28 @@ function getHtmlFiles() {
 
 export default defineConfig({
   root: resolve(__dirname, rootPath),
+  // Directory to serve as plain static assets.
   publicDir: resolve(__dirname, 'public'),
+  // Adjust console output verbosity.
+  logLevel: 'info',
+  // development server configuration
+  server: {
+    // Vite 4 defaults to 5173, but you can override it with the port option.
+    port: 3000,
+  },
   build: {
     outDir: resolve(__dirname, 'dist'),
+
+    // Remove the dist directory before building
     emptyOutDir: true,
+
+    // Do not warn about large chunks
+    // chunkSizeWarningLimit: Infinity,
+
+    // Double the default size threshold for inlined assets
+    // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
+    assetsInlineLimit: 4096 * 2,
+
     rollupOptions: {
       input: getHtmlFiles(),
 

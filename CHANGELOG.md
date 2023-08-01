@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/cssninjaStudio/mistral/compare/v1.1.2...v1.2.0) (2023-08-01)
+
+
+### Features
+
+* upgrade vidstack to 0.6 ([5c2cfdf](https://github.com/cssninjaStudio/mistral/commit/5c2cfdfd230eb7e8ec4e87788d0e2285a4ce7112))
+* upgrade vite to 4.x ([37dbc7e](https://github.com/cssninjaStudio/mistral/commit/37dbc7ef33f6e9725fe86417c7592f30a7b52cd7))
+
 ### [1.1.2](https://github.com/cssninjaStudio/mistral/compare/v1.1.1...v1.1.2) (2023-04-27)
 
 ### [1.1.1](https://github.com/cssninjaStudio/mistral/compare/v1.1.0...v1.1.1) (2023-04-27)

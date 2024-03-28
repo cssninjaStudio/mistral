@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout action retreive the source (git clone)
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # needed to retreive all git history
           token: ${{ secrets.APP_GITHUB_TOKEN }}
@@ -23,9 +23,9 @@ jobs:
       - run: corepack enable
 
       # Setup pnpm with cache
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: "pnpm"
 
       # Run "standard-version", which may create a new tag

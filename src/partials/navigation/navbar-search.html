@@ -33,7 +33,7 @@
           type="button"
           class="absolute top-0 left-0 h-10 w-10 flex justify-center items-center text-muted-400 group-focus-within:text-primary-500 transition-colors duration-300 cursor-pointer"
         >
-          <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
+          <iconify-icon class="iconify w-4 h-4" icon="lucide:search"></iconify-icon>
         </button>
         <!--Empty button-->
         <button
@@ -41,7 +41,7 @@
           :class="searchTerms === '' ? 'hidden' : 'block'"
           @click="searchTerms = ''"
         >
-          <i class="iconify w-4 h-4" data-icon="lucide:x"></i>
+          <iconify-icon class="iconify w-4 h-4" icon="lucide:x"></iconify-icon>
         </button>
       </div>
     </div>

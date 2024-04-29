@@ -1,4 +1,3 @@
-import '@purge-icons/generated'
 import 'vidstack/icons'
 import 'vidstack/define/media-player.js'
 import 'vidstack/define/media-poster.js'
@@ -11,6 +10,7 @@ import Alpine from 'alpinejs'
 import intersect from '@alpinejs/intersect'
 import collapse from '@alpinejs/collapse'
 import persist from '@alpinejs/persist'
+import 'iconify-icon'
 
 import './demo'
 import './components'

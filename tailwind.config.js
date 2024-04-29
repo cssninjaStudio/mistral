@@ -170,7 +170,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
     require('vidstack/tailwind.cjs')({
       prefix: 'media', // paused:... -> media-paused:...
     }),

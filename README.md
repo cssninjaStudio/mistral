@@ -10,9 +10,7 @@ Mistral is built with [Tailwind CSS](https://tailwindcss.com/) and [Alpine JS](h
 
 ## 👍 Features
 
-- Gulp 4 and Node.js 16/18+
 * Tailwind v3.x
-* ES6 support
 * Alpine v3.x
 * RTL support
 

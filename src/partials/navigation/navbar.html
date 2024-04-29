@@ -64,11 +64,11 @@
             :class="megamenuOpened ? 'z-40' : 'z-50'"
           >
             <span>Product</span>
-            <i
-              class="iconify w-5 h-5 text-muted-400 dark:text-muted-300 transition-transform duration-300"
+            <iconify-icon
+              class="iconify w-5 h-5 flex items-center justify-center text-lg text-muted-400 dark:text-muted-300 transition-transform duration-300"
               :class="openedMegamenu === 'megamenu-1' && megamenuOpened ? 'rotate-180' : ''"
-              data-icon="lucide:chevron-down"
-            ></i>
+              icon="lucide:chevron-down"
+            ></iconify-icon>
           </button>
 
           <!--Megamenu-->
@@ -84,11 +84,11 @@
             :class="megamenuOpened ? 'z-40' : 'z-50'"
           >
             <span>Company</span>
-            <i
-              class="iconify w-5 h-5 text-muted-400 dark:text-muted-300 transition-transform duration-300"
+            <iconify-icon
+              class="iconify w-5 h-5 flex items-center justify-center text-lg text-muted-400 dark:text-muted-300 transition-transform duration-300"
               :class="openedMegamenu === 'megamenu-2' && megamenuOpened ? 'rotate-180' : ''"
-              data-icon="lucide:chevron-down"
-            ></i>
+              icon="lucide:chevron-down"
+            ></iconify-icon>
           </button>
           <!--Megamenu-->
           {{> navigation/megamenu-slim}}
@@ -133,7 +133,7 @@
         <div
           class="h-10 w-10 flex items-center justify-center rounded-full text-muted-400 group-hover:text-muted-500 group-hover:bg-muted-100 dark:group-hover:bg-muted-700 dark:group-hover:text-muted-100 transition-colors duration-300"
         >
-          <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
+          <iconify-icon class="iconify w-4 h-4" icon="lucide:search"></iconify-icon>
         </div>
       </button>
       <div class="h-12 w-12 flex items-center justify-center">

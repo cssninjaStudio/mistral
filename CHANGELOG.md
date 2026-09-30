@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/cssninjaStudio/mistral/compare/v1.3.0...v1.4.0) (2026-09-30)
+
+
+### ⚖️ License
+
+* relicense under MIT ([cfbfab3](https://github.com/cssninjaStudio/mistral/commit/cfbfab39d5bb92378a262f8ea62d2f1a1d79b129))
+
 ## [1.3.0](https://github.com/cssninjaStudio/mistral/compare/v1.2.0...v1.3.0) (2024-04-29)
 
 
